@@ -1,2 +1,2 @@
 # woofydos
-slowlorisをrubyでcoded
+slowlorisをrubyで書いただけ
