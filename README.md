@@ -1,2 +1,2 @@
 # slowloris.rb
-Low bandwidth DoS tool. Slowloris rewrite in Ruby.
+Slow http attack tool rewriten with ruby.
