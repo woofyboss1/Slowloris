@@ -1,2 +1,2 @@
-# woofydos
-slowlorisをrubyで再実装しただけのコード
+# slowloris.rb
+Low bandwidth DoS tool. Slowloris rewrite in Ruby.
