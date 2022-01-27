@@ -1,2 +1,2 @@
 # woofydos
-slow http attack written with ruby
+slowlorisをrubyで再実装しただけのコード
